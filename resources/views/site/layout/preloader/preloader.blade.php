@@ -1,0 +1,7 @@
+<!---------------- preloader------------>
+<div class="preloader">
+    <div class="preloader-body">
+        <div class="cssload-container"><span></span><span></span><span></span><span></span>
+        </div>
+    </div>
+</div>
