@@ -31,6 +31,7 @@ Route::group(['prefix' => '/dashboard', 'namespace' => 'adminpanel'], function (
        Route::get('/store/{id}' , 'TitleController@store')->name('admin.title.store');
        Route::get('/edit/{id}' , 'TitleController@edit')->name('admin.title.edit');
    });
+
 });
 
 
