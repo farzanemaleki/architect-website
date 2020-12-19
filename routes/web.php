@@ -16,6 +16,21 @@ use Illuminate\Support\Facades\Route;
 //    return view('site.home.index');
 //});
 
-Route::get('/', 'site\HomeController@index')->name('home');
 
-Route::get('/dashboard' , 'adminPanel\HomeController@index')->name('adminPanel.home');
+Route::group(['prefix' => '/' , 'namespace' => 'site'], function () {
+    Route::get('' , 'HomeController@index')->name('home');
+});
+
+
+Route::group(['prefix' => '/dashboard', 'namespace' => 'adminpanel'], function () {
+   Route::get('' , 'HomeController@index')->name('adminPanel.home');
+
+   Route::group(['prefix' => '/title'], function (){
+       Route::get('' , 'TitleController@index')->name('admin.title.index');
+       Route::get('/create' , 'TitleController@create')->name('admin.title.create');
+       Route::get('/store/{id}' , 'TitleController@store')->name('admin.title.store');
+       Route::get('/edit/{id}' , 'TitleController@edit')->name('admin.title.edit');
+   });
+});
+
+

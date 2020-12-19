@@ -13,17 +13,19 @@
     <!-- Icons -->
     <link href="{{asset('adminPanel/vender/nucleo/css/nucleo.css')}}" rel="stylesheet">
     <link href="{{asset('adminPanel/vender/@fortawesome/fontawesome-free/css/all.min.css')}}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <!-- Argon CSS -->
     <link type="text/css" href="{{asset('adminPanel/css/argon.css')}}" rel="stylesheet">
+    <!-- bootstrap rtl -->
+    <link rel="stylesheet" href="{{url('adminPanel/dist/css/bootstrap-rtl.min.css')}}">
     @yield('headerLinks')
     @yield('headerScripts')
 </head>
 <body>
 <!-- Sidenav -->
-@include('adminPanel.sidenav.sidenav')
+@include('adminPanel.layout.sidenav.sidenav')
 <div class="main-content">
-    <!-- Top navbar -->
-    @include('adminPanel.topNavbar.topNavbar')
+
     <!-- Main content -->
     @yield('mainContent')
 
