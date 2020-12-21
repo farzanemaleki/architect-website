@@ -73,10 +73,14 @@
                                         <td>{{$title->secondTitle}}</td>
                                         <td>{!! $title->description !!}</td>
                                         <td>
-                                            <a href="{{route('admin.title.edit', $title->id)}}">
-                                                <i class="fa fa-pencil m-2"></i>
+                                            <a class="btn btn-outline-primary m-1 ajax  " href="{{route('admin.title.edit', $title->id)}}" data-toggle="tooltip" title="" data-original-title="ویرایش">
+                                                <i class="m-1 fa fa-edit"></i>
+                                            </a>
+                                            <a class="btn btn-outline-danger m-1 ajax" href="{{route('admin.title.destroy', $title->id)}}" data-toggle="tooltip" title="" data-original-title="حذف">
+                                                <i class="m-1 fa fa-trash"></i>
                                             </a>
                                         </td>
+
                                     </tr>
                                 @endforeach
                                 </tbody>
@@ -91,10 +95,6 @@
     </section>
 @endsection
 @section('footerScripts')
-    {{--    dataTables--}}
-    <script src="{{url('adminPanel/plugins/datatables/jquery.dataTables.js')}}"></script>
-    <script src="{{url('adminPanel/plugins/datatables/dataTables.bootstrap4.js')}}"></script>
-
     <script !src="">
         $('.nav-link').removeClass('active');
         $('#titles').addClass('active');

@@ -28,8 +28,10 @@ Route::group(['prefix' => '/dashboard', 'namespace' => 'adminpanel'], function (
    Route::group(['prefix' => '/title'], function (){
        Route::get('' , 'TitleController@index')->name('admin.title.index');
        Route::get('/create' , 'TitleController@create')->name('admin.title.create');
-       Route::get('/store/{id}' , 'TitleController@store')->name('admin.title.store');
+       Route::post('/store' , 'TitleController@store')->name('admin.title.store');
        Route::get('/edit/{id}' , 'TitleController@edit')->name('admin.title.edit');
+       Route::post('/update/{id}' , 'TitleController@update')->name('admin.title.update');
+       Route::get('/destroy/{id}' , 'TitleController@destroy')->name('admin.title.destroy');
    });
 
 });

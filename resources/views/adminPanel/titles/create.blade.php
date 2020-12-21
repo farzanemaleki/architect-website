@@ -22,26 +22,17 @@
             </div>
         </div>
     </div>
+    <div class="col-sm-12">
+        @foreach($errors->all() as $error)
+            <div class="alert alert-danger col-sm-3">
+                <li>{{$error}}</li>
+            </div>
+        @endforeach
+    </div>
     <section class="content">
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    @if(session('message'))
-                        <div class="alert alert-success col-sm-3">
-                            <li>{{Session::get('message')}}</li>
-                        </div>
-                    @endif
-                    @if(session ('error'))
-                        <div class="alert alert-danger col-sm-3">
-                            <li>{{Session::get('error')}}</li>
-                        </div>
-                    @endif
-                    @if(session ('warning'))
-                        <div class="alert alert-warning col-sm-3">
-                            <li>{{Session::get('warning')}}</li>
-                        </div>
-                    @endif
-                </div>
                 <div class="card text-right">
                     <div class="card-header">
                         <div class="card-title">مشخصات تیتر جدید</div>
@@ -49,7 +40,7 @@
 
                     {{--    <-----------card body ------->--}}
                     <div class="card-body">
-                        <form action="" role="form" method="post">
+                        <form action="{{route('admin.title.store')}}" role="form" method="post">
                             @csrf
                             <div class="row">
 
@@ -57,7 +48,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <lable> محل تیتر در سایت</lable>
-                                        <input type="text" class="form-control" name="titleLocation"
+                                        <input type="text" class="form-control" name="titleLocation" value="{{old('titleLocation')}}"
                                                placeholder="محل قرارگیری تیتر را وارد کنید ...">
                                     </div>
                                 </div>
@@ -65,7 +56,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <lable>تیتر اول</lable>
-                                        <input type="text" class="form-control" name="firstTitle"
+                                        <input type="text" class="form-control" name="firstTitle" value="{{old('firstTitle')}}"
                                                placeholder="تیتر اول را وارد کنید ...">
                                     </div>
                                 </div>
@@ -73,7 +64,7 @@
                                 <div class="col-sm-4">
                                     <div class="form-group">
                                         <lable>تیتر دوم</lable>
-                                        <input type="text" class="form-control" name="secondTitle"
+                                        <input type="text" class="form-control" name="secondTitle" value="{{old('secondTitle')}}"
                                                placeholder="تیتر دوم را وارد کنید ...">
                                     </div>
                                 </div>
@@ -81,7 +72,7 @@
                                 <div class="col-sm-8">
                                     <div class="form-group">
                                         <lable>توضیحات زیر تیتر</lable>
-                                        <textarea rows="5" type="text" class="form-control" name="description" id="description" placeholder="توضیحات زیر تیتر را وارد کنید ..."></textarea>
+                                        <textarea rows="5" type="text" class="form-control" name="description" id="description" value="{{old('description')}}" placeholder="توضیحات زیر تیتر را وارد کنید ..."></textarea>
                                     </div>
                                 </div>
 
