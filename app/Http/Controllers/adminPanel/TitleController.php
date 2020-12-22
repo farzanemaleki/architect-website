@@ -4,6 +4,7 @@ namespace App\Http\Controllers\adminPanel;
 
 use App\Http\Controllers\Controller;
 use App\Title;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 
 class TitleController extends Controller
@@ -139,5 +140,25 @@ class TitleController extends Controller
             $title->delete();
             return redirect(route('admin.title.index'))->with('warning', 'تیتر ' . $title->titleLocation . ' با موفقیت حذف شد');
         }
+    }
+    public function uploadImage()
+    {
+        $this->validate(request(), [
+            'upload' => 'required'
+        ]);
+        $image = '';
+
+        $imagePath = "/upload/images/2020/";
+        $file = request()->file('upload');
+        $filename = $file->getClientOriginalName();
+        if (file_exists(public_path($imagePath) . $filename)) {
+            $filename = Carbon::now()->timestamp . $filename;
+        }
+        $file->move(public_path($imagePath), $filename);
+        $url = $imagePath . $filename;
+        $function_number = $_GET['CKEditorFuncNum'];
+        $message = '';
+        return "<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction( '$function_number' , '$url' , '$message' );</script>";
+
     }
 }

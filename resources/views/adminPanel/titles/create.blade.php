@@ -97,12 +97,12 @@
 
                     <script !src="">
 
-                        // CKEDITOR.replace('description', {
-                        //     filebrowserUploadMethod : 'form',
-                        //     filebrowserUploadUrl: '/dashboard/save_image',
-                        //     filebrowserImageUploadUrl: '/dashboard/save_image',
-                        //
-                        // });
+                         CKEDITOR.replace('description', {
+                             filebrowserUploadMethod : 'form',
+                             filebrowserUploadUrl: '/dashboard/title/save_image',
+                             filebrowserImageUploadUrl: '/dashboard/title/save_image',
+
+                         });
 
                      </script>
 

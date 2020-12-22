@@ -32,8 +32,8 @@ Route::group(['prefix' => '/dashboard', 'namespace' => 'adminpanel'], function (
        Route::get('/edit/{id}' , 'TitleController@edit')->name('admin.title.edit');
        Route::post('/update/{id}' , 'TitleController@update')->name('admin.title.update');
        Route::get('/destroy/{id}' , 'TitleController@destroy')->name('admin.title.destroy');
+       Route::post('/save_image', 'TitleController@uploadImage');
    });
-
 });
 
 

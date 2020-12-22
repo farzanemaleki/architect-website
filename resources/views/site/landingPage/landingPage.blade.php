@@ -107,12 +107,15 @@
             </div>
             <div class="col-xl-7 col-xxl-6 offset-xl-5 offset-xxl-6">
                 <div class="swiper-modern-content">
-                    <h3>Featured Project</h3>
-                    <h1>94 Smith Dr.</h1>
-                    <p class="font-weight-regular">In this project, our designers tried to combine several styles in a
-                        single interior.<br class='d-none d-xl-block'> It features some modern and classic elements in
-                        the decor.</p><a class="link-decorative link-decorative-2" href="#">more</a>
+                    @foreach($titles as $title)
+                        @if($title->id == 1)
+                    <h3>{{ $title->firstTitle  }}</h3>
+                    <h1>{{ $title->secondTitle }}</h1>
+                    <p class="font-weight-regular">{{ $title->description }}</p>
+                            <a class="link-decorative link-decorative-2" href="#">بیشتر</a>
                 </div>
+                @endif
+                @endforeach
             </div>
         </div>
     </div>

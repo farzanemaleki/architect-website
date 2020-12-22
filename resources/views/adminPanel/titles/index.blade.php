@@ -53,7 +53,7 @@
                         </div>
                         <div class="card-body">
                         <div class=" col-sm-12">
-                            <table id="example2" class="table table-bordered table-hover text-center">
+                            <table id="example2" class="table table-bordered table-hover text-center table-responsive">
                                 <thead>
                                 <tr>
                                     <th>ردیف</th>

@@ -73,7 +73,7 @@
                                     <div class="col-sm-8">
                                         <div class="form-group">
                                             <lable>توضیحات زیر تیتر</lable>
-                                            <textarea rows="5" type="text" class="form-control" name="description" id="description" value="{{$title->description}}" placeholder="توضیحات زیر تیتر را وارد کنید ..."></textarea>
+                                            <textarea rows="5" type="text" class="form-control" name="description" id="description"  placeholder="توضیحات زیر تیتر را وارد کنید ...">{{$title->description}}</textarea>
                                         </div>
                                     </div>
 
@@ -98,12 +98,12 @@
 
                         <script !src="">
 
-                            // CKEDITOR.replace('description', {
-                            //     filebrowserUploadMethod : 'form',
-                            //     filebrowserUploadUrl: '/dashboard/save_image',
-                            //     filebrowserImageUploadUrl: '/dashboard/save_image',
-                            //
-                            // });
+                            CKEDITOR.replace('description', {
+                                filebrowserUploadMethod : 'form',
+                                filebrowserUploadUrl: '/dashboard/title/save_image',
+                                filebrowserImageUploadUrl: '/dashboard/title/save_image',
+
+                            });
 
                         </script>
 
