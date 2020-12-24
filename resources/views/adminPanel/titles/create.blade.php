@@ -79,7 +79,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-group">
                                         <input type="submit" class="btn btn-primary" value="ذخیره">
-                                        <a class="btn btn-danger" href="{{ route('adminPanel.home') }}">لغو عملیات</a>
+                                        <a class="btn btn-danger" href="{{ route('admin.title.index') }}">لغو عملیات</a>
                                     </div>
                                 </div>
                             </div>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\site;
 
+use App\HomeImage;
 use App\Http\Controllers\Controller;
 use App\Title;
 use Illuminate\Http\Request;
@@ -16,7 +17,8 @@ class HomeController extends Controller
     public function index()
     {
         $titles = Title::all();
-        return view('site.home.index' , compact('titles'));
+        $banners = HomeImage::all();
+        return view('site.home.index' , compact(['titles' , 'banners']));
     }
 
     /**

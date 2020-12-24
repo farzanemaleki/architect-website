@@ -79,14 +79,17 @@
                 <div class="swiper-container swiper-slider swiper-slider-modern" data-slide-effect="fade"
                      data-loop="true" data-autoplay="4000" data-nav="true" data-thumb="#swiper-thumbs">
                     <div class="swiper-wrapper text-left">
-                        <div class="swiper-slide bg-image-lg bg-overlay-2"
-                             data-slide-bg="{{asset('site/images/slider-1.jpg')}}"></div>
-                        <div class="swiper-slide bg-image-lg bg-overlay-2"
-                             data-slide-bg="{{asset('site/images/slider-2.jpg')}}"></div>
-                        <div class="swiper-slide bg-image-lg bg-overlay-2"
-                             data-slide-bg="{{asset('site/images/slider-3.jpg')}}"></div>
-                        <div class="swiper-slide bg-image-lg bg-overlay-2"
-                             data-slide-bg="{{asset('site/images/slider-4.jpg')}}"></div>
+                        @foreach($banners as $banner)
+                            @if($banner->id == 1)
+                                <div class="swiper-slide bg-image-lg bg-overlay-2" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 2)
+                                <div class="swiper-slide bg-image-lg bg-overlay-2" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 3)
+                                <div class="swiper-slide bg-image-lg bg-overlay-2" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 4)
+                                <div class="swiper-slide bg-image-lg bg-overlay-2" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @endif
+                        @endforeach
                     </div>
                     <div class="swiper-pagination__module">
                         <div class="swiper-pagination"></div>
@@ -98,24 +101,33 @@
                      data-slides-per-view="3" data-secondary="" data-center="true" data-space-between="30"
                      data-loop="true">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide" data-slide-bg="{{asset('site/images/slider-1.jpg')}}"></div>
-                        <div class="swiper-slide" data-slide-bg="{{asset('site/images/slider-2.jpg')}}"></div>
-                        <div class="swiper-slide" data-slide-bg="{{asset('site/images/slider-3.jpg')}}"></div>
-                        <div class="swiper-slide" data-slide-bg="{{asset('site/images/slider-4.jpg')}}"></div>
+                        @foreach($banners as $banner)
+                            @if($banner->id == 1)
+                            <div class="swiper-slide" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 2)
+                                <div class="swiper-slide" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 3)
+                                <div class="swiper-slide" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @elseif($banner->id == 4)
+                                <div class="swiper-slide" data-slide-bg="{{url('')}}{{$banner->image}}"></div>
+                            @endif
+                        @endforeach
+
                     </div>
                 </div>
             </div>
             <div class="col-xl-7 col-xxl-6 offset-xl-5 offset-xxl-6">
                 <div class="swiper-modern-content">
                     @foreach($titles as $title)
-                        @if($title->id == 1)
+                    @if($title->id == 1)
                     <h3>{{ $title->firstTitle  }}</h3>
                     <h1>{{ $title->secondTitle }}</h1>
-                    <p class="font-weight-regular">{{ $title->description }}</p>
+                    <p class="font-weight-regular">{!! $title->description !!} </p>
                             <a class="link-decorative link-decorative-2" href="#">بیشتر</a>
+                    @endif
+                    @endforeach
                 </div>
-                @endif
-                @endforeach
+
             </div>
         </div>
     </div>

@@ -50,8 +50,8 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./examples/maps.html">
-                        <i class="ni ni-pin-3 text-orange"></i> نقشه ها
+                    <a class="nav-link" id="homeImage" href="{{route('admin.homeImage.index')}}">
+                        <i class="ni ni-pin-3 text-orange"></i>تصاویر صفحه اصلی
                     </a>
                 </li>
                 <li class="nav-item">
