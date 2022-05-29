@@ -440,12 +440,12 @@
 
     <section class="section-news section">
         <div class="container">
-            <h2 class="section-title">Latest News <a href="" class="link-arrow-2 pull-right">All Articles <i
+            <h2 class="section-title">Latest News <a href="<?= PAGEPATH ?>blogs.php" class="link-arrow-2 pull-right">All Articles <i
                         class="icon ion-ios-arrow-right"></i></a></h2>
             <div class="news-carousel owl-carousel">
                 <div class="news-item">
                     <img alt="" src="<?php echo SITEURL ?>site/assets/images/blogs/1-370x370.jpg">
-                    <div class="news-hover">
+                    <div class="news-hover"> 
                         <div class="hover-border">
                             <div></div>
                         </div>

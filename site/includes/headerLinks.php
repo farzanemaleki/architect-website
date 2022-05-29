@@ -1,5 +1,6 @@
 <?php 
     define('SITEURL', 'http://localhost/vahid/'); 
+    define('PAGEPATH', 'site/pages/');
 ?>
 <head>
     <meta charset="utf-8">
