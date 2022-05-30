@@ -2521,7 +2521,22 @@ a.brand:focus {
 
 .project-detail-info {
     background-color: var(--bg-color);
-    padding: 3.3rem
+    padding: 1rem
+}
+.tp-parallax-wrap{
+    top: 3px !important;
+    left: 25px !important;
+}
+
+@media(min-width: 768px ){
+    .tp-parallax-wrap{
+        left: 40px !important;
+    }
+}
+@media(min-width: 991px ){
+    .tp-parallax-wrap{
+        left: 65px !important;
+    }
 }
 
 .project-detail-control {

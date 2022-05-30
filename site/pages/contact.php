@@ -33,8 +33,6 @@
                                             href="/cdn-cgi/l/email-protection" class="__cf_email__"
                                             data-cfemail="f1989f979e83b193908499908482df929e">[email&#160;protected]</a>
                                     </p>
-                                    <p class="contact-row"><strong class="text-dark">Skype:</strong> bauhaus.arc
-                                    </p>
                                 </div>
                                 <div class="col-contact col-lg-6">
                                     <p class="contact-top"><strong class="text-muted">Call directly:</strong>

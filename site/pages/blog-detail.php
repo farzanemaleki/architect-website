@@ -22,7 +22,7 @@
                             on Dec 15th, 2016
                         </div>
                         <div class="entry-content">
-                            <h3 class="entry-description">To mark the first UK show of artist<br> Henri Barande,
+                            <!-- <h3 class="entry-description">To mark the first UK show of artist<br> Henri Barande,
                                 graphic designer <strong>Pavel Murren</strong> and German studio Schultzschultz
                                 have created<br> The Lodge Wooden</h3>
                             <p>This response is important for our ability to learn from mistakes, but it
@@ -52,7 +52,7 @@
                             <p class="blockquote-cite"><cite>Logan Cee</cite>Envato Author</p>
                             <p>Both of these assumptions, of course, could be entirely false. Self-censoring is
                                 firmly rooted in our experiences with mistakes in the past and not the present.
-                                The brain messages arising from those experiences can be deceptive. </p>
+                                The brain messages arising from those experiences can be deceptive. </p> -->
                         </div>
                         <div class="entry-footer">
                             <div class="tags-links">
@@ -189,9 +189,6 @@
                                 </div>
                                 <div class="form-group col-sm-4">
                                     <input type="email" name="email" placeholder="Email">
-                                </div>
-                                <div class="form-group col-sm-4">
-                                    <input type="text" placeholder="Subject (Optinal)">
                                 </div>
                                 <div class="form-group col-sm-12">
                                     <textarea name="message" required placeholder="Message*"></textarea>

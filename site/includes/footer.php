@@ -14,26 +14,15 @@
         </div>
         <div class="flex-item">
             <ul>
-                <li><a href="">Site Map</a></li>
-                <li><a href="">Term & Conditions</a></li>
-                <li><a href="">Privacy Policy</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Affiliatep</a></li>
-            </ul>
-        </div>
-        <div class="flex-item">
-            <ul>
                 <li><a href="">Our Location</a></li>
-                <li><a href="">Career</a></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Contact</a></li>
             </ul>
         </div>
         <div class="flex-item">
             <ul>
-                <li class="active"><a href="">ENG</a></li>
-                <li><a href="">FRA</a></li>
-                <li><a href="">GER</a></li>
+                <li class="active"><a href="">English</a></li>
+                <li><a href="">Persian</a></li>
             </ul>
         </div>
         <div class="flex-item">
@@ -47,4 +36,4 @@
         </div>
     </div>
 </footer>
-    
+
