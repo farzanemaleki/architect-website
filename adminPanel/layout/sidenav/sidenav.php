@@ -5,8 +5,8 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="{{route('adminPanel.home')}}">
-            <img src="../../../assets/adminPanel/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand pt-0" href="<?= SITEURL.PAGEADMINPATH ?>home/index.php">
+            <img src="<?= SITEURL ?>adminPanel/assets/adminPanel/img/brand/blue.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- Collapse -->
         <div class="collapse navbar-collapse text-right" id="sidenav-collapse-main">
@@ -15,7 +15,7 @@
                 <div class="row">
                     <div class="col-6 collapse-brand">
                         <a href="{{route('adminPanel.home')}}">
-                            <img src="../../../assets/adminPanel/img/brand/blue.png">
+                            <img src="<?= SITEURL ?>adminPanel/assets/adminPanel/img/brand/blue.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close text-left">
