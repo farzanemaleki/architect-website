@@ -5312,6 +5312,57 @@ input[type='button'].btn-block
     text-decoration: none;
 }
 
+
+.navbar-brand .brand {
+    float: left;
+    margin-top: -.5rem;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none
+}
+
+
+.brand {
+    line-height: 1.6;
+    color: var(--text-color);
+    display: inline-block
+}
+
+a.brand:hover,
+a.brand:focus {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.brand img {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: .65rem;
+    height: 2.356rem
+}
+
+.brand-info {
+    display: inline-block
+}
+
+.brand-name {
+    font-weight: 600;
+    font-size: 1.714rem;
+    line-height: 1
+}
+
+.brand-text {
+    color: #999;
+    font-size: .857rem;
+    font-weight: 300;
+    margin-top: -.3rem
+}
+.navbar-brand-img{
+    margin-bottom: 20px;
+}
+
+
+
 .navbar-nav
 {
     display: flex;

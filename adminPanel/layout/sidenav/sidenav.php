@@ -5,8 +5,14 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="<?= SITEURL.PAGEADMINPATH ?>home/index.php">
-            <img src="<?= SITEURL ?>adminPanel/assets/adminPanel/img/brand/blue.png" class="navbar-brand-img" alt="...">
+        <a class="navbar-brand pt-0" href="<?=SITEURL . PAGEADMINPATH?>home/index.php">
+            
+            <div class="brand-info">
+            <div class="brand-name">bauhaus</div>
+            <div class="brand-text">architecture</div>
+            
+        </div>
+        <img src="<?=SITEURL?>site/assets/images/brand-dark.png" class="navbar-brand-img" alt="...">
         </a>
         <!-- Collapse -->
         <div class="collapse navbar-collapse text-right" id="sidenav-collapse-main">
@@ -14,8 +20,8 @@
             <div class="navbar-collapse-header d-md-none">
                 <div class="row">
                     <div class="col-6 collapse-brand">
-                        <a href="{{route('adminPanel.home')}}">
-                            <img src="<?= SITEURL ?>adminPanel/assets/adminPanel/img/brand/blue.png">
+                        <a href="<?=SITEURL . PAGEADMINPATH?>home/index.php">
+                            <img src="<?=SITEURL?>site/assets/images/brand-dark.png">
                         </a>
                     </div>
                     <div class="col-6 collapse-close text-left">
@@ -40,7 +46,7 @@
             <!-- Navigation -->
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" href="{{route('adminPanel.home')}}">
+                    <a class="nav-link active" href="<?= SITEURL . PAGEADMINPATH ?>home/index.php">
                         <i class="ni ni-tv-2 text-primary"></i> داشبورد
                     </a>
                 </li>
