@@ -33,19 +33,7 @@
                     <a href="./examples/profile.html" class="dropdown-item">
                         <i class="ni ni-single-02"></i>
                         <span>پروفایل من</span>
-                    </a>
-                    <a href="./examples/profile.html" class="dropdown-item">
-                        <i class="ni ni-settings-gear-65"></i>
-                        <span>تنظیمات</span>
-                    </a>
-                    <a href="./examples/profile.html" class="dropdown-item">
-                        <i class="ni ni-calendar-grid-58"></i>
-                        <span>فعالیت</span>
-                    </a>
-                    <a href="./examples/profile.html" class="dropdown-item">
-                        <i class="ni ni-support-16"></i>
-                        <span>پشتیبانی</span>
-                    </a>
+                    </a>    
                     <div class="dropdown-divider"></div>
                     <a href="#!" class="dropdown-item">
                         <i class="ni ni-user-run"></i>

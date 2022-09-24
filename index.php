@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en">
-    <?php include('./site/includes/headerLinks.php') ?>
+    <?php include("./site/config/config.php") ?>
+    <?php include("./site/includes/headerLinks.php") ?>
     <body>
         <div class="animsition">
             <div class="wrapper boxed">

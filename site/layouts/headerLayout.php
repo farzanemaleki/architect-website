@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html lang="en">
+    <?php include("../config/config.php") ?>
     <?php include('../includes/headerLinks.php') ?>
     <body>
         <div class="animsition">

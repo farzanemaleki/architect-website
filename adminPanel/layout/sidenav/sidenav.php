@@ -51,45 +51,58 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" id="titles" href="{{route('admin.title.index')}}">
-                        <i class="ni ni-planet text-blue"></i> تیترها
+                    <a class="nav-link" href="<?= SITEURL.PAGEADMINPATH ?>project_categories/index.php">
+                        <i class="ni ni-planet text-blue"></i> دسته بندی پروژه ها
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./examples/maps.html">
-                        <i class="ni ni-pin-3 text-orange"></i> نقشه ها
+                        <i class="ni ni-pin-3 text-orange"></i> پروژه ها
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./examples/profile.html">
-                        <i class="ni ni-single-02 text-yellow"></i> پروفایل کاربر
+                        <i class="ni ni-single-02 text-yellow"></i> دسته بندی بلاگ ها
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./examples/tables.html">
-                        <i class="ni ni-bullet-list-67 text-red"></i> جداول
+                        <i class="ni ni-bullet-list-67 text-red"></i> بلاگ ها
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./examples/login.html">
-                        <i class="ni ni-key-25 text-info"></i> ورود
+                        <i class="ni ni-key-25 text-info"></i> اسلایدر صفحه اصلی
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./examples/login.html">
+                        <i class="ni ni-key-25 text-info"></i> کامنت ها
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./examples/login.html">
+                        <i class="ni ni-key-25 text-info"></i> همکاران
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./examples/login.html">
+                        <i class="ni ni-key-25 text-info"></i> شبکه های اجتماعی
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./examples/login.html">
+                        <i class="ni ni-key-25 text-info"></i> درباره ما
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./examples/register.html">
-                        <i class="ni ni-circle-08 text-pink"></i> عضویت
+                        <i class="ni ni-circle-08 text-pink"></i> تماس با ما
                     </a>
                 </li>
-            </ul>
-            <!-- Divider -->
-            <hr class="my-3">
-            <!-- Heading -->
-            <h6 class="navbar-heading text-muted">مستندات قالب را ببینید:</h6>
-            <!-- Navigation -->
-            <ul class="navbar-nav mb-md-3">
                 <li class="nav-item">
-                    <a class="nav-link" href="docs/documentation.html">
-                        <i class="ni ni-single-copy-04"></i> مستندات
+                    <a class="nav-link" href="./examples/register.html">
+                        <i class="ni ni-circle-08 text-pink"></i> حساب کاربری 
                     </a>
                 </li>
             </ul>

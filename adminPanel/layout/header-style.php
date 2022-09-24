@@ -1,6 +1,7 @@
 <?php 
 define('SITEURL', 'http://localhost/vahid/'); 
 define('PAGEADMINPATH', 'adminPanel/');
+include_once '../../includes/db.php';
 ?>
 
 <!DOCTYPE html>
@@ -23,5 +24,5 @@ define('PAGEADMINPATH', 'adminPanel/');
     <!-- Argon CSS -->
     <link type="text/css" href="<?= SITEURL ?>adminPanel/assets/adminPanel/css/argon.css" rel="stylesheet">
     <!-- bootstrap rtl -->
-    <!-- <link rel="stylesheet" href="<?= SITEURL ?>adminPanel/assets/adminPanel/dist/css/bootstrap-rtl.min.css"> -->
+    <!-- <link rel="stylesheet" href="<?= SITEURL ?>adminPanel/assets/adminPanel/css/bootstrap-rtl.min.css"> -->
 </head>
